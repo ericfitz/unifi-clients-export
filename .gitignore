@@ -5,3 +5,6 @@ __pycache__/**
 # Environment files (exclude all but example)
 *.env
 !example.env
+
+# Release artifacts
+*.zip
