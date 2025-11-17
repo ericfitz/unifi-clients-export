@@ -24,7 +24,18 @@ A Python script to export all client devices and UniFi infrastructure from a Uni
 
 ### 1. Get the Code
 
-Clone or download this repository:
+You have two options:
+
+**Option A: Download the Latest Release (Recommended for most users)**
+
+Download the latest release zip file from the [Releases page](https://github.com/ericfitz/unifi-clients-export/releases) and extract it:
+
+```bash
+unzip unifi-clients-export-*.zip
+cd unifi-clients-export
+```
+
+**Option B: Clone the Repository**
 
 ```bash
 git clone https://github.com/ericfitz/unifi-clients-export
