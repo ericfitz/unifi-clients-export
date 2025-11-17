@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unifi-clients-export"
+version = "1.0.0"
+description = "Export UniFi Network clients and infrastructure to CSV files"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Eric Fitzgerald"}
+]
+keywords = ["unifi", "network", "export", "csv", "ubiquiti"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Networking",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "requests>=2.31.0",
+    "pandas>=2.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/efitz/unifi-clients-export"
+Issues = "https://github.com/efitz/unifi-clients-export/issues"
+
+[project.scripts]
+unifi-clients-export = "uce:main"
+
+[tool.setuptools]
+py-modules = ["uce"]
