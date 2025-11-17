@@ -1,0 +1,7 @@
+*.csv
+__pycache__
+__pycache__/**
+
+# Environment files (exclude all but example)
+*.env
+!example.env
